@@ -19,10 +19,10 @@ public class Singleton {
      * get object method
      * @return
      */
-    public synchronized static Object getInstance(){
+    public synchronized static Singleton getInstance(){
         // if not exist, new an instance
         if (singleton == null){
-            return new Object();
+            return new Singleton();
         }
         return singleton;
     }
